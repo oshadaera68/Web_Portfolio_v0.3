@@ -518,18 +518,18 @@ h3.my-profession {
 }
 
 /* images */
-.gallery{
+.gallery {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
-.gallery .image{
+.gallery .image {
     padding: 7px;
     width: calc(100% / 4);
- }
+}
 
- .gallery > div::before {
+.gallery>div::before {
     content: " ";
     position: absolute;
     bottom: 0;
@@ -545,7 +545,7 @@ h3.my-profession {
 }
 
 
-.gallery > div:hover::before {
+.gallery>div:hover::before {
     width: 100%;
     height: 100%;
     opacity: 0.4;
@@ -566,17 +566,82 @@ h3.my-profession {
     cursor: pointer;
 }
 
-.gallery .image span{
+.gallery .image span {
     display: flex;
     width: 100%;
     overflow: hidden;
 }
 
-.gallery .image img{
+.gallery .image img {
     width: 100%;
     vertical-align: middle;
 }
 
-.gallery .image:hover img{
+.gallery .image:hover img {
     transform: scale(1.1);
+}
+
+/* service */
+
+.service .service-container{
+    padding-bottom: 40px;
+}
+
+.service .service-item {
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.service .service-item .service-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
+}
+
+.service .service-item .service-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.service .service-item .service-item-inner .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner .icon .fa {
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon {
+    background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.service .service-item .service-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
 }

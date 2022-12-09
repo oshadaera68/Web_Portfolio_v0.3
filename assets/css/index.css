@@ -8,6 +8,14 @@
     --text-black-700: #504e70;
 }
 
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
+
 body {
     line-height: 1.5;
     font-size: 16px;
@@ -121,33 +129,6 @@ ul {
 
 .btn:hover {
     transform: scale(1.05);
-}
-
-#media_links {
-    position: absolute;
-    display: flex;
-    bottom: 19vh;
-    left: 35vw;
-}
-
-#list {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    left: 0vw;
-}
-
-#list>li {
-    list-style: none;
-    width: 60px;
-    font-size: 40px;
-    transition: .6s;
-}
-
-#list>li:hover {
-    transition: all .6s ease;
-    transform: translate(0, -20px);
-    color: white;
 }
 
 .shadow-dark {

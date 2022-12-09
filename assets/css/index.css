@@ -45,10 +45,33 @@ ul {
     display: block;
     padding: 0 30px;
     opacity: 1;
+    position: fixed;
+    left: 270px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x:hidden ;
 }
 
-.main-content {
-    padding-left: 270px;
+.section.back-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .hidden {
